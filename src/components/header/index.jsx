@@ -5,19 +5,19 @@ import { Buttons, Container, ContainerButtons, MediaButtons } from './styles';
 export function Header() {
 
     const [isOpen, setIsOpen] = useState(false)
-
+    console.log(isOpen)
     return (
         <Container>
             <img src={perfil} />
             <ContainerButtons>
 
-                <MediaButtons className={`closed ${isOpen ? "open" : ''}`}>
+                <MediaButtons className={`fab ${isOpen ? "open" : ''}`}>
                     <button onClick={() => (setIsOpen(!isOpen))}
                         className="material-icon">
                         <img src={dots} alt="dots" />
                     </button>
 
-                    <div className="menu">
+                    <div className="menu" >
                         <span>Home</span>
                         <span>Sobre nós</span>
                         <span>Blog</span>

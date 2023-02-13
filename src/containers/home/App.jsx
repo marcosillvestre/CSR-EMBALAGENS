@@ -1,13 +1,13 @@
 import React from "react"
-import { Body, Header } from '../../components'
+import { Header, Section } from '../../components'
 import { Container } from './styles'
 function App() {
 
   return (
     <Container>
       <Header />
-      <Body />
-
+      <Section />
+      {/* <Footer/> */}
 
     </Container>
   )
