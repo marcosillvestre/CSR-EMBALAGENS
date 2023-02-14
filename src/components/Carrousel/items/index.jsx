@@ -1,16 +1,17 @@
 import dots from '../../../assets/dots.svg';
+import cx from '../../../assets/pascoaCx.png';
 
 
 const Items = [
     {
         id: 1,
-        image: dots,
+        image: cx,
         imageDesc: "bolo no pote",
-        description: "to aqui",
+        description: "Caixa para ovo de colher de 100 gramas. Várias cores. Medida: 12x12x9",
     },
     {
         id: 2,
-        image: "",
+        image: dots,
         description: "",
     },
     {

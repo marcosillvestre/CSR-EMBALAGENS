@@ -1,12 +1,11 @@
 import React from "react";
-import Carousel from 'react-elastic-carousel';
 import Items from './items';
-import { Item } from './styles';
+import { CarouselEdited, Item } from './styles';
 
 function Carrousel() {
 
     return (
-        <Carousel itemstoShow={1}>
+        <CarouselEdited itemstoShow={1}>
 
             {
                 Items &&
@@ -19,7 +18,7 @@ function Carrousel() {
                     </Item>
                 ))}
 
-        </Carousel>
+        </CarouselEdited>
     )
 }
 

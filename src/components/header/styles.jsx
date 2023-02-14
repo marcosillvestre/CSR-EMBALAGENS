@@ -6,7 +6,7 @@ padding: 1rem 10rem;
 gap: 10rem;
 height: 5em;
 min-width: 100vw ;
-margin-bottom: 12rem;
+margin-bottom: 1rem;
 img{
 height: 5em;
 border-radius:100%;
