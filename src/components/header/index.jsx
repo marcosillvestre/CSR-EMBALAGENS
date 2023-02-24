@@ -8,20 +8,20 @@ export function Header() {
     console.log(isOpen)
     return (
         <Container>
-            <img src={perfil} />
+            <img className="logo" src={perfil} />
             <ContainerButtons>
 
                 <MediaButtons className={`fab ${isOpen ? "open" : ''}`}>
                     <button onClick={() => (setIsOpen(!isOpen))}
                         className="material-icon">
-                        <img src={dots} alt="dots" />
+                        <img className="dots" src={dots} alt="dots" />
                     </button>
 
                     <div className="menu" >
-                        <span>Home</span>
-                        <span>Sobre nós</span>
-                        <span>Blog</span>
-                        <span>Contato</span>
+                        <a href="*">Home</a>
+                        <a href="*">Sobre nós</a>
+                        <a href="*">Blog</a>
+                        <a href="*">Contato</a>
                     </div>
                 </MediaButtons>
 
