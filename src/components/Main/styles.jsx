@@ -3,42 +3,61 @@ import styled from "styled-components";
 export const Container = styled.main`
 margin: 6em 0;
 display: flex;
-justify-content: flex-start;
+gap: 35px;
+align-items: center;
 height: 75vh;
 flex-direction: column;
-align-items: center;
+
+
 .carousel{
     display: flex;
-    overflow-x: scroll;
-    padding: 24px;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 24px;
-    border-radius: 8px;
-    gap: 12px;
-    width: 300px;
-}
+    justify-content: space-around;
 
-.container .item{
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    padding: 24px;
-    
-    border: 1px solid red;
-    h1{
-        font-size: 2rem;
+     img{
+        width: 20em;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+}
+.item{
+    display: grid;
+    gap: 25px;
+    width: 30em;
+    a{
+        text-align: center;
     }
 
+    
 }
+
+
 
 
 @media (max-width: 720px){
-    .item{
-
-        h1{
-            font-size: 1.6rem;
-            
-        }
-
+.carousel{
+    display: grid;
+    overflow-x: scroll;
+    gap: 1px;
+    img{
+        width: 17.5em;
+        aspect-ratio: 3/2;
+        object-fit: contain;
     }
+    a{
+        font-size: 1.7rem;
+    }
+}
+
+.item{
+    height: 42vh;
+    margin-top: 5em;
+    display: grid;
+    gap: 1.5em;
+    align-items: center;
+    padding: 5rem;    
+}
+
+
 }
 `
